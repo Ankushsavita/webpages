@@ -1,0 +1,727 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary--: rgb(231,214,25); 
+    --secondary--:  rgb(10,32,80);
+}
+
+/* -------------------- NAVBAR-SECTION ------------------- */
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 4px black;
+    z-index: 100000;
+}
+
+.nav img{
+    transform: translate(20px , 0px);
+}
+.nav .tags{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--primary--);
+    cursor: pointer;
+}
+
+/* --------------------- HOME-SECTION --------------------*/
+.sec .home{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background: url('./images/hero-bg.jpg');
+    transform: translate(0px, 66px);
+}
+
+.home .content{
+    width: 50%;
+    position: relative;
+}
+
+.home .content .inner-content{
+    width: 73%;
+    height: 50vh;
+    position: absolute;
+    top: calc(20% - 10px);
+    left: calc(29% - 20px);
+    border-right: 2px solid var(--primary--);
+}
+
+.home .content .inner-content p{
+    font-size: 20px;
+}
+.home .content .inner-content h1{
+    font-size: 50px;
+    font-weight: 1500;
+}
+.home .content .inner-content #h1{
+    color: var(--primary--);
+}
+.home .content .inner-content #p1{
+    transform: translate(0px , 20px);
+}
+
+.home .content .inner-content .btn{
+    height: 10vh;
+    transform: translate(0, 50px);
+}
+.home .content .inner-content .btn button{
+    font-size: 18px;
+    padding: 13px 35px; 
+}
+.home .content .inner-content .btn #bt1{
+    border: none;
+    color: white;
+    background-color: var(--secondary--);  
+}
+.home .content .inner-content .btn #bt1:hover{
+    color: var(--secondary--);
+    background-color: white;
+    border: 1px solid var(--secondary--);
+    cursor: pointer;
+}
+.home .content .inner-content .btn #bt2{
+    border: none;
+    color: white;
+    background-color: var(--primary--);   
+}
+.home .content .inner-content .btn #bt2:hover{
+    color: var(--secondary--);
+    background-color: white;
+    border: 1px solid var(--primary--);  
+}
+
+.dog-img{
+    width: 50%;
+    background:  no-repeat url('./images/hero-bg2.png')  ;
+    background-size: cover;
+}
+
+/* ---------------------- ABOUT-SECTION -------------------- */
+
+.about-sec{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0px, 66px);
+}
+
+.about-sec .ab-sec{
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-sec .ab-sec #img-1{
+   font-size: 50px;
+}
+.about-sec .ab-sec h1{
+    font-size: 40px;
+}
+.about-sec .ab-sec p{
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: grey;
+    transform: translate(0, 20px);
+}
+.about-sec .ab-sec button{
+    border: none;
+    color: var(--primary--);;
+    background: none;
+    font-size: 18px;
+    transform: translate(0, 40px);
+}
+.about-sec .ab-sec button:hover{
+    cursor: pointer;
+}
+
+/* -------------------- ANIMATION-SECTION -----------------*/
+.animate-sec{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/animal-bg.jpg') ;
+    transform: translate(0, 100px);
+}
+
+.animate-sec .inner-animate{
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.animate-sec .inner-animate div{
+    width: 18%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.animate-sec .inner-animate div img{
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px black;
+}
+
+.animate-sec .inner-animate div .p1{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.animate-sec .inner-animate div .p2{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.animate-sec .inner-animate .anim-1{
+    animation: anim_1 3s linear infinite;
+}
+
+@keyframes anim_1 {
+    0%{
+        transform: translate(0, 0);
+    }25%{
+        transform: translate(0, -50px);
+    }50%{
+        transform: translate(0 , 0);
+    }75%{
+        transform: translate(0, 70px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.animate-sec .inner-animate .anim-2{
+    animation: anim_2 3s linear infinite;
+}
+
+@keyframes anim_2 {
+    0%{
+        transform: translate(0, 0);
+    }25%{
+        transform: translate(0, 50px);
+    }50%{
+        transform: translate(0 , 0);
+    }75%{
+        transform: translate(0, -50px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+/* ----------------- DOG-CARYING-SECTION ---------------- */
+.dog-carying{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    transform: translate(0, 100px);
+}
+
+.dog-carying .dog-care{
+    width: 50%;
+    height: 70vh;
+    background: url('./images/pet-bg.png') no-repeat;
+}
+.dog-carying .dog-care img{
+    transform: translate(155px , 0);
+}
+
+.dog-carying .content{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dog-carying .content .inside{
+    width: 80%;
+    height: 50vh;
+    transform: translate(40px, 0px);
+}
+.dog-carying .content .inside #head{
+    transform: translate(0, 35px);
+}
+.dog-carying .content .inside h1{
+    font-size: 35px;
+    transform: translate(0, 38px);
+}
+.dog-carying .content .inside .p4 {
+    font-size: 18px;
+    transform: translate(0, 50px);
+    letter-spacing: 1px;
+}
+.dog-carying .content .inside button{
+    border: none;
+    color: var(--primary--);
+    background: none;
+    font-size: 18px;
+    transform: translate(0, 70px);
+}
+.dog-carying .content .inside button:hover{
+    cursor: pointer;
+}
+
+/* ----------------- DOG-CHOOSE-SECTION ----------------- */
+.dog-choose{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(0, 140px);
+}
+
+.dog-choose .content{
+    width: 86%;
+    height: 20vh;
+}
+.dog-choose .content h2{
+    font-size: 40px;
+}
+.dog-choose .content p{
+    font-size: 19px;
+    transform: translate(0, 10px);
+}
+
+.dog-choose .dogs{
+    width: 86%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dog-choose .dogs img{
+    width: 250px;
+    height: 250px;
+}
+
+.dog-choose .circle-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.dog-choose .circle-img::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 65%;
+    height: 1.5px;
+    left: 10%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    background-image:linear-gradient(to right, transparent 50%, #e7d619 50%) ;
+    background-size: 20px 10px;
+    animation: run 4s linear infinite ;
+}
+
+@keyframes run{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(200px);
+    }
+}
+
+.dog-choose .circle-img h4{
+    transform: translate(20px,20px);
+}
+.dog-choose .circle-img #h4{
+    transform: translate(50px,20px);
+}
+
+.dog-choose .btn-link{
+    width: 86%;
+    height: 10vh;
+}
+.dog-choose .btn-link button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--primary--);
+    background: none;
+    font-size: 20px;
+    transform: translate(510px, 25px);
+}
+.dog-choose .btn-link button:hover{
+    cursor: pointer;
+}
+.dog-choose .btn-link img{
+    margin: 10px;
+}
+
+/* ------------------ DOG-FOOD-SECTION ----------------- */
+.food-sec{
+    width: 100%;
+    height: 180vh;
+    transform: translate(0, 200px);
+}
+
+.food-sec .food_1{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary--);
+    position: relative;
+}
+.food-sec .food_1 .dog-food{
+    width: 80%;
+    height: 20vh;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: calc(20% - 20px);
+    left: calc(10% - 10px);
+}
+.food-sec .food_1 .dog-food h1{
+     font-size: 30px;
+     font-weight: 800;
+     transform: translate(0, 10px);
+}
+.food-sec .food_1 .dog-food p{
+     font-size: 20px;
+     transform: translate(0, 20px);
+}
+
+.food-sec .food_1 .dog-food_2{
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(10% - 10px);
+}
+
+.food-sec .food_1 .food-rate{
+    width: 90%;
+    height: 21vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: calc(150% - 50px);
+    left: calc(10% - 10px);
+}
+
+.food-sec .food_1 .food-rate p{
+    color: var(--primary--);
+    font-size: 18px;
+}
+.food-sec .food_1 .food-rate h2{
+    color: var(--primary--);
+    font-size: 30px;
+}
+.food-sec .food_1 .food-rate span{
+    color: var(--secondary--);
+    font-size: 30px;
+    font-weight: 1200;
+    transform: translate(10px, 5px);
+}
+.food-sec .food_1 .food-rate button{
+    background-color: var(--secondary--);
+    padding: 12px 45px;
+    font-size: 20px;
+    border: none;
+    color: var(--primary--);
+    transform: translate(-50px, 10px);
+}
+.food-sec .food_1 .food-rate button:hover{
+    background-color: transparent;
+    color: var(--secondary--);
+    border: 1px solid var(--secondary--);
+    cursor: pointer;
+}
+.food-sec .food_1 .food-rate #sp{
+    transform: translate(18px, 3px);
+}
+
+/* -------------- REVIEW-SECTION ---------------- */
+.review-sec{
+    width: 100%;
+    min-height: 115vh;
+    transform: translate(0, 150px);
+    background: url('images/client-bg.jpg') no-repeat;
+}
+
+.review-sec .review-customer{
+    width: 50%;
+    height: 20vh;
+    transform: translate(100px, 150px);
+}
+.review-sec .review-customer h1{
+    font-size: 35px;
+}
+.review-sec .review-customer p{
+    font-size: 18px;
+    transform: translate(0px, 10px);
+}
+
+.review-sec .review-main{
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    transform: translate(100px, 220px);
+}
+.review-sec .review-main .img {
+    width: 30%;
+}
+
+.review-sec .review-main .review{
+    width: 60%;
+    height: inherit;
+}
+.review-sec .review-main .review .rp{
+    font-size: 24px;
+}
+.review-sec .review-main .review .rc{
+    font-size: 19px;
+    color: grey;
+    transform: translate(0, 10px);
+}
+.review-sec .review-main .review img{
+    width: 3%;
+    height: 3vh;
+    transform: translate(0, 20px);
+}
+
+.review-sec .review-main .btn{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-sec .review-main .btn button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary--);
+    margin: 5px;
+}
+.review-sec .review-main .btn button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.review-sec .review-main .btn button img{
+    width: 15px;
+    height: 15px;
+}
+
+/* ----------------- FORM-SECTION ----------------- */
+.form-sec{
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    transform: translate(0, 150px);
+}
+
+.form-sec .form{
+    width: 50%;
+}
+
+.form-sec .form .form-content{
+    width: 60%;
+    height: 22vh;
+    transform: translate(100px, 80px);
+}
+.form-sec .form .form-content h1{
+    font-size: 40px;
+}
+.form-sec .form .form-content p{
+    font-size: 18px;
+    color: gray;
+    transform: translate(0, 10px);
+}
+
+.form-sec .form .main-form{
+    width: 70%;
+    height: 78vh;
+    transform: translate(100px, 120px);
+}
+.form-sec .form .main-form input{
+    width: 100%;
+    height: 9vh;
+    font-size: 18px;
+    background-color: rgb(235,235,235);
+    outline: none;
+    border: none;
+}
+.form-sec .form .main-form input::placeholder{
+    transform: translate(10px, 0px);
+}
+.form-sec .form .main-form  #add{
+    height: 16vh;
+    font-size: 18px;
+}
+.form-sec .form .main-form button{
+    padding: 13px 40px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--primary--);
+    color: white;
+}
+.form-sec .form .main-form button:hover{
+    border: 1px solid var(--primary--);
+    color: var(--primary--);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.form-sec .map{
+    width: 50%;
+    height: 120vh;
+    clip-path: inset(5% 6% 6% 5%);
+}
+.form-sec .map iframe{
+    width: 100%;
+    height: 110vh;   
+}
+
+/* ---------------- FOOTER-SECTION ---------------- */
+.footer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0, 150px);
+}
+
+.footer .footer_main{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--secondary--);
+}
+
+.footer .footer_main .foot_1{
+    width: 15%;
+    height: 20vh;
+    color: white;
+}
+.footer .footer_main .foot_1 p{
+    font-size: 22px;
+}
+.footer .footer_main .foot_1 .p5{
+    font-size: 18px;
+    transform: translate(0, 10px);
+}
+.footer .footer_main .foot_1 .p6{
+    font-size: 18px;
+    transform: translate(0, 20px);
+}
+.footer .footer_main .foot_1 p img{
+    margin-right: 10px;
+}
+
+.footer .footer_main .foot_2{
+    width: 18%;
+    height: 20vh;
+    color: white;
+}
+.footer .footer_main .foot_2 p{
+    font-size: 22px;
+}
+.footer .footer_main .foot_2 .p7{
+    font-size: 18px;
+    transform: translate(0, 10px);
+}
+.footer .footer_main .foot_2 .p8{
+    font-size: 18px;
+    transform: translate(0, 20px);
+}
+
+.footer .footer_main .foot_3{
+    width: 15%;
+    height: 20vh;
+    color: white;
+}
+.footer .footer_main .foot_3 p{
+    font-size: 22px;
+}
+.footer .footer_main .foot_3 img{
+    transform: translate(8px, 15px);
+    margin: 3px;
+}
+.footer .footer_main .foot_3 img:hover{
+    cursor: pointer;
+}
+
+.footer .footer_main .foot_4{
+    width: 20%;
+    height: 20vh;
+    color: white;
+}
+.footer .footer_main .foot_4 p{
+    font-size: 22px;
+}
+.footer .footer_main .foot_4 input{
+    width: 220px;
+    height: 37px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    transform: translate(0, 10px);
+}
+.footer .footer_main .foot_4 button{
+    padding: 10px 61px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    transform: translate(0, 20px);
+    background-color: var(--primary--);
+}
+.footer .footer_main .foot_4 button:hover{
+    border: 1px solid  var(--primary--);
+    color: var(--primary--);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer .foot_below{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--primary--);
+    text-align: center;
+    line-height: 10vh;
+    color: white;
+    font-size: 20px;
+}
+
+
+
